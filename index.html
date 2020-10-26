@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Font Awsome -->
+	<script src="https://kit.fontawesome.com/c834aede1d.js" crossorigin="anonymous"></script>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+<!--Beginning of Styles Section -->	
+<style type="text/css">
+	/* Needed for media queries to function */
+	@charset "UTF-8"
+	@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&family=Varela+Round&display=swap');
+
+/***************************************************/
+/** Mobil Styles First **/
+/***************************************************/
+html {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	font-size: 16px;
+}
+
+body {
+	font-family: 'Varela Round', sans-serif;
+	/***************************************************/
+	/**Change here for side of email background color **/
+	background-color: #d8dbdb;
+	/***************************************************/
+	margin: 0 auto;
+	color: #565859;
+	/***************************************************/
+	/** Controls the amount of edging on sides of message **/
+	padding: 0 10%; 
+	/***************************************************/
+}
+
+#wrapper {
+	/***************************************************/
+	/**Change here for background color where content is **/
+	background-color: #f6faff;
+	/***************************************************/
+	padding: 2%;
+}
+
+.header-container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-flow: row wrap;
+}
+
+#logo {
+	font-size: 1.7em;
+	font-family: 'Architects Daughter', cursive;
+	font-weight: bold;
+	text-align: center;
+}
+
+#callout {
+	margin-bottom: 10%;
+}
+
+.social {
+	list-style-type: none;
+}
+
+.social li {
+	display: inline;
+}
+
+.social li a {
+	font-size: 2.5em;
+}
+
+.banner-container img {
+	object-fit: cover;
+	width: 100%;
+	height: 300px;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.8em;
+}
+
+p {
+	text-align: justify;
+	font-size: 1.5em;
+}
+
+.button-holder {
+	display: flex;
+	justify-content: flex-end;
+	margin: 1% 2% 4% 0;
+}
+
+.btn {
+	background: #303840;
+	color: #f6faff;
+	text-decoration: none;
+	font-weight: 800;
+	padding: 4px 8px;
+	border-radius: 8px;
+	letter-spacing: .5px;
+}
+
+.btn:hover {
+	background: #58585A;
+}
+
+.line {
+	/*use clear so that nothing goes beside it */
+	clear: both;
+	height: 2px;
+	background-color: #e3e9e9;
+	margin: 4% auto;
+	width: 96%;
+}
+
+a {
+	color: #607cc3;
+	text-decoration: none;
+	font-size: 1.5em;
+}
+
+a:hover {
+	font-weight: bold;
+}
+
+.contact {
+	text-align: center;
+	padding-bottom: 3%;
+	line-height: 30px;
+	font-size: 1em;
+}
+
+.contact a {
+	font-size: 1em;
+}
+
+/*Youtube video styles */
+.embed-container { 
+	position: relative; 
+	padding-bottom: 56.25%; 
+	height: 0; 
+	overflow: hidden; 
+	max-width: 100%; 
+} 
+
+/*Youtube video styles */
+.embed-container iframe, 
+.embed-container object, 
+.embed-container embed { 
+	position: absolute; 
+	top: 0; left: 0; 
+	width: 100%; 
+	height: 100%; 
+}
+
+/***************************************************/
+/* Tablet-Sized Screen and larger */
+/***************************************************/
+@media only screen and (min-width: 768px){
+	h1 {
+	margin-bottom: 0;
+	margin-top: 2%;
+	padding-bottom: 0;
+	}
+	#callout {
+	margin-bottom: 2%;
+	margin-top: 0;
+	padding-top: 0;
+	}
+	p {
+	font-size: 1em;
+	}
+	.line {
+	margin: 3% auto;
+	}
+	.button-holder {
+	margin: 1% 1% 2% 0;
+	}
+	/**Parent Container**/
+	/**Added flex to the tablet size only and applied flex to children**/
+	/**No need to use flex for mobil first format**/
+	.two-col {
+	display: flex;
+	}
+	.two-col h2 {
+	margin: 0;
+	font-size: 1.7em;
+	}
+	/**Child 1**/
+	.first-video {
+	flex: 1;
+	padding-right: 10px;
+	}
+	/**Child 2**/
+	.second-video {	
+	flex: 1;
+	padding-left: 10px;
+	}
+	.two-col a {
+	font-size: 1em;
+	}
+	.two-col p {
+	font-size: 1em;
+	}
+}
+</style>
+<!-- End of Style Section -->
+</head>
+<body>
+	<div id="wrapper">
+		<header class="header-container">
+			<div id="logo">
+				<!--Any future logo or image will need to be in upload folder and online for it to display in email -->
+				<h1><i class="fas fa-sun"></i>Company Name Here</h1><br>
+			</div>
+			<div id="callout">
+				<ul class="social">
+					<li><a href="https://facebook.com" target="_blank">
+						<i class="fab fa-facebook-square"></i>
+					</a></li>
+					<li><a href="https://pintrest.com" target="_blank">
+						<i class="fab fa-pinterest-square"></i>
+					</a></li>
+					<li><a href="https://twitter.com" target="_blank">
+						<i class="fab fa-twitter-square"></i>
+					</a></li>
+					<li><a href="https://youtube.com" target="_blank">
+						<i class="fab fa-youtube-square"></i>
+					</a></li>
+				</ul>
+			</div>
+		</header>
+		<div class="banner-container">
+				<!--Any future logo or image will need to be in upload folder and online for it to display in email -->
+				<img src="../uploads/nader-arman-yzmWiPmb7v4-unsplash.jpg" alt="banner">
+		</div>
+		<div class="one-col">
+			<h1>Heading Message Goes Here!</h1>
+			<p>In this month's newsletter we'll learn how to set calculate the amout of energy your solar powered system needs to create to meet all the electricity needs of your home.</p>
+			<p>In this month's newsletter we'll learn how to set calculate the amout of energy your solar powered system needs to create to meet all the electricity needs of your home.</p>
+			<p>In this month's newsletter we'll learn how to set calculate the amout of energy your solar powered system needs to create to meet all the electricity needs of your home.</p>
+		</div>	
+		<div class="button-holder">
+			<a class="btn" href="#" target="_blank">Learn More</a>
+		</div>
+		
+
+		<div class="line"></div>
+
+		<div class="two-col">
+				<!-- Copy youtube embed code, paste into http://embedresponsively.com/ then replace the below code -->
+			
+				<!-- Video Code starts below here -->
+			<div class="first-video">
+					<h2>Latest Video Release</h2>
+					<div class="embed-container">
+						<iframe width='560' height='315' src='https://www.youtube.com/embed/PVnQ87Fvsk4' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen>
+						</iframe>
+					</div>
+					
+				<!--Ends here-->
+
+				<!-- Or Use Image, Code starts here -->
+				<!--
+				<img src="#" alt="Name your image here">
+				-->
+				<!--Image Code ends here -->
+			
+					<p>In this month's newsletter we'll learn how to set calculate the amout of energy your solar powered system needs to create to meet all the electricity needs of your home.</p>
+					<a href="#" target="_blank">Check out the article here...</a> 
+				</div>
+
+				<!-- Copy youtube embed code, paste into http://embedresponsively.com/ then replace the below code -->
+			
+				<!-- Video Code starts below here -->
+				
+				<div class="second-video">
+					<h2>Latest Video Release</h2>
+					<div class="embed-container">
+						<iframe width='560' height='315' src='https://www.youtube.com/embed/PVnQ87Fvsk4' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen>
+						</iframe>
+					</div>
+
+				<!--Ends here-->
+
+				<!-- Or Use Image, Code starts here -->
+				<!--
+				<img src="#" alt="Name your image here">
+				-->
+				<!--Image Code ends here -->
+
+					<p>In this month's newsletter we'll learn how to set calculate the amout of energy your solar powered system needs to create to meet all the electricity needs of your home.</p>
+					<a href="#" target="_blank">Check out the article here...</a> 
+				</div> 
+			
+		</div> <!--End of class two-col -->
+
+		<div class="line"></div>
+
+		<p class="contact">
+			contact@companyname.com 
+			<br>
+			If you wish to unsubscribe from this email please <a href="%unsubscribe%">unsubscribe here.</a>
+		</p>
+	</div><!-- End Wrapper -->
+</body>
+</html>
